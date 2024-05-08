@@ -1,0 +1,204 @@
+*{
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 50vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('../media/about1.jpg') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+header h3{
+  font-family: serif;
+}
+
+p .navbar-brand{
+  background-color: rgba(200,200,200,0.2);
+
+  
+  border-radius: 20px;
+}
+
+p #D{
+  font-size: 30px;
+  color: blue;
+  font-family: serif;
+
+  
+}
+p #i{
+  font-size: 30px;
+  font-family: serif;
+  color: #FF9046;
+
+}
+p #e{
+  font-size: 30px;
+  font-family: serif;
+  color: #F64444;
+
+}
+p #t{
+  font-size: 30px;
+  font-family: serif;
+  color: green;
+
+}
+
+body .navbar{
+  opacity: 0;
+  background: linear-gradient(to top, #2000, #ffff);
+  transition: all 1s ease;
+ }
+body .navbar.scrolled{
+  opacity: 1;
+  background: linear-gradient(to top, #2000, #ffff);
+  transition: all 1s ease;
+}
+
+
+ body .navbar-nav{
+ /*  display: inline-block;
+  border-radius: 20px;
+
+  opacity: 1;
+  background-color: rgba(0,0,0,0.2); */
+ }
+
+nav li a{
+  transition: all 0.6s ease 0s; 
+}
+
+nav li{
+  transition: all 0.6s ease 0s; 
+}
+nav li a:hover{
+  
+  /*nav a.active{
+  color: red;*/
+  color: white;
+  /*display: inline-block;*/
+  border-radius: 30px;
+  background-color: #f4511e;
+  transition: all 1s ease 0s;
+}
+nav #buy:hover{
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+#team h3{
+  font-family: serif;
+  font-size:60px;
+  text-shadow: 2px 2px 3px grey;
+}
+
+#team .slide{
+  box-shadow: 3px 3px 20px red;
+}
+
+#team .carousel-inner{
+  background-image: url('../media/testimonial.jpg');
+  background-position: top;
+  background-size: cover; 
+  background-repeat: none;
+/*   background:black; */
+  padding: 35px 0;
+  position: relative;
+  margin: 60px 0;
+}
+#team .carousel-control-prev-icon,
+#team .carousel-control-next-icon{
+  background-color:transparent;
+}
+#team .img-area{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px white;
+} 
+#team .img-area:hover{
+  background-color: red;
+  cursor: pointer;
+}
+#team .img-area img{
+  width: 100%;
+  height: 100%
+}
+#team .carousel-caption{
+  position: static;
+  padding-bottom: 15px;
+  padding-top:0;
+}
+#team .carousel-caption h4{
+  font-size: 26px;
+  margin-bottom:15px;
+  margin-top: 25px; 
+}
+#team .carousel-caption h5{
+  color: yellow;
+}
+#team .carousel-caption p{
+  font-size: 18px;
+  margin:auto;
+  width: 70%;
+  margin-bottom: 10px;
+}
+#team .carousel-indicators{
+  bottom: -35px;
+}
+
+/* .youtube .iframe{
+  border-color: red;
+  box-shadow: 2px 2px 10px black;
+} */
+
+.youtube{
+  text-align: center;
+}
